@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrum Board</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap');
+    </style>
+
+</head>
+<body>
+    <div class="container__input">
+        <h1>SCRUM-BOARD</h1>
+        <form id="scrum__form">
+            <input type="text" name="scrum__text" id="scrum__text" placeholder="Hmm, What to do?">
+            <button type="submit" id="confirm" >ADD</button>
+        </form>
+
+
+
+    </div>
+
+<div class="container__board">
+
+  <div class = "column" id="Backlog">
+    <h2>Backlog</h2>
+    <ul id="board__list">
+
+    </ul>
+  </div>
+
+  <div class = "column" id="In_progress">
+    <h2>In progress</h2>
+    <ul id="board__list">
+
+    </ul>
+  </div>
+
+  <div class = "column" id="Done">
+    <h2>Done</h2>
+    <ul id="board__list">
+
+    </ul>
+  </div>
+
+
+
+
+</div>
+
+    <script src="Board.js"></script>
+
+</body>
+</html>

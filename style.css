@@ -1,0 +1,208 @@
+
+/*
+Input Style
+*/
+html {
+        background: url(images/bg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.container__input{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  width: 600px;
+
+  margin: auto;
+}
+
+.container__input h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 45px;
+  text-align: center;
+  color: #02996c;
+}
+
+.container__input #scrum__form {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container__input #scrum__text, .container__input .edit {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 25px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 2px solid #02996c;
+  outline: none;
+  width: 400px;
+  height: 50px;
+  margin: auto;
+}
+
+.container__input #scrum__text:focus, .container__input .edit:focus {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 25px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 400px;
+  height: 50px;
+  margin: auto;
+}
+
+.container__input #scrum__form button{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  color: white;
+  width: 100px;
+  font-size: 25px;
+  background-color: #02996c;
+  border: 1px solid black;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.container__input #scrum__form button:hover {
+  background-color: #247567;
+  border: 1px solid black;
+  border-radius: 15px;
+
+}
+
+/*
+Board Style
+*/
+
+.container #board__list {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container__board {
+  padding-top: 6px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+
+}
+
+.column{
+  border-radius: 15px;
+  border: 1px solid black;
+  width: 33%;
+  height: 100%;
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  height: 1000px;
+}
+
+#Backlog {
+background-color: rgba(158, 231, 165, 0.92);
+}
+
+#In_progress {
+background-color: rgba(138, 190, 132, 0.92);
+}
+
+#Done {
+background-color: rgba(38, 102, 11, 0.8);
+}
+
+.container__board #board__list li{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  font-size: 20;
+  display: flex;
+  height: 35px;
+  width: 95%;
+  padding-bottom: 35px;
+  padding-top: 5px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.8);
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.container__board #board__list label {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  margin: 0 5px 2px 5px;
+  font-size: 22px;
+  color: black;
+  border-bottom: solid black 1px;
+  width: 90%;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 5px;
+}
+
+ /*
+Buttons design
+ */
+.container__board #board__Remove {
+  border: none;
+  background: none;
+  color: crimson;
+}
+
+
+
+.container__board #board__Done{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: rgba(0,0,0);
+  border: 1px solid rgb(0,0,0);
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background: none;
+}
+
+.container__board #board__In_progress{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: blue;
+  border: 1px solid blue;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background: none;
+}
+
+.container__board #board__Backlog{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: brown;
+  border: 1px solid brown;
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  background: none;
+}
+
+
+.container__board #board__Done:hover{
+background-color: rgba(192,192,192,0.5)
+}
+
+.container__board #board__In_progress:hover{
+background-color: rgba(0,0,255,0.3)
+}
+
+.container__board #board__Backlog:hover{
+background-color: rgba(165,42,42,0.3)
+}
